@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+    <head>
+     <style>
+                      /* positioning the  navigation container*/
+.navbarContainer{
+    position: fixed;
+    top: 0px;
+    background-color:rgba(0, 0, 0, 0.7);
+    height:60px;
+    width: 100%;
+    z-index: 1;
+    padding: 10px 0px 10px 0px;
+}
+
+list item positioning
+.navbar li{
+	float: right;
+    padding: 10px 15px 10px 20px;
+    text-align: center;
+}
+
+anchor displaying
+.navbar li a  {
+    text-decoration:none;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    transition: 0.2s all ease-in;
+    font-size: 16;
+    font-family:sans-serif;
+    font-weight: bold;
+	border-radius: 10px;
+}
+.navbar li a span{
+    color: rgb(117, 141, 250);
+    font-weight: italic;
+    transition: 0.2s all ease-in;
+}
+positioning the unordered list nav
+.navbar{
+	transition: 0.2s all ease-in;
+    list-style: none;
+    margin: 0px;
+}
+
+hover effect for the list names
+.navbar li a:hover{
+    color: black;
+    background: white;
+}
+hover effect for the list names span
+.navbar li:hover span{
+    color:rgb(0, 0, 0);
+}
+
+/*positioning the logo*/
+#webname{
+    height:40px ;
+    width: 60px;
+    border-color: transparent;
+    float: left;
+    color: white;
+    margin: 0px 80px 0px 15px;
+    padding: 0px 0px 0px 0px;
+}
+
+
+
+/* setting width*/
+::-webkit-scrollbar {
+    width: 13px;
+  }
+
+/*styling scrollbar track*/
+::-webkit-scrollbar-track {
+        background-color: black;
+      }
+
+/*styling the scrolbar thumb*/
+::-webkit-scrollbar-thumb {
+          background-color:rgba(28, 137, 209,0.5) ;
+          border-radius: 3px;
+        }
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background: rgb(0,0,204);
+	height: 500px;
+	width:350px;
+}
+
+        /* svg trapezium 01 */
+
+svg{
+    position: absolute;
+}
+        /*  team description    */
+
+.team_description{
+    font-family: sans-serif;
+    margin-top: 0%;
+    padding: 80px;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0,153);
+    padding-bottom: 170px;
+    box-shadow: 0px 1px 20px black;
+}
+.team_description img{
+    margin: auto;
+
+}
+.team_description h1{
+    font-size: 80px;
+}
+.team_intro{
+    text-align:center;
+    width: 80%;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+	left:10%;
+}
+.team_intro h1{
+    font-size: 20px;
+}
+.team_intro p{
+    font-family: 'Courier New', Courier, monospace;
+	text-align:center;
+}
+.team_intro span{
+    font-size: 30px;
+}
+
+#topic{
+font-size: 20px;
+color:rgb(102, 255, 255);
+font-family:shizuru;}
+
+#topbtn{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    margin: 20px;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    transition: 0.1s all;
+    position: fixed;
+}
+#topbtn:focus{
+    outline: none;
+}
+#topbtn:hover{
+    background-color: transparent;
+    color: white;
+    transform: scale(1.3);
+}
+
+.bg_image{
+	height:150px;
+	width:150px;
+}
+.com_logo{
+	height:250px;
+	width:250px;
+}
+.card-panel{
+    webkit-box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+	background-color:rgba(50, 200, 100, 0.4);
+    }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+        </style>
+	 <title>Fake News Detector</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="CSS/Style1.css">
+    <link rel="stylesheet" href="CSS/naviStyle.css">
+	<link rel="stylesheet" href="JS/naviStyle.css">-->
+    <body>
+	<!--<script src="JS/popup.js"></script>-->
+    <script>
+        var colorChanger = document.getElementsByTagName("button")[0];
+        colorChanger.addEventListener("click",function() {
+        document.querySelector('p').style.color = "blue";
+        });
+    </script>
+
+<html lang="en">
+
+    <!--  navigation bar  -->
+    <header class="navbarContainer" ><br>
+        <img id="webname" src="logo2.jpg" alt="Site logo">
+		<h1 id="topic">FAKE-ND</h1>
+    </header>
+   
+    <div class="team_description">
+        <form class="grid" action="/results" method="POST">
+        <div class="team_intro">
+            <p><span>F</span>AKE-ND helps you to Detect Fake News on Twitter <br><br><br> Version 1.0<br><br><br><br><br><br><br>
+
+
+            <div class="card-panel" id="info-card" style="visibility: visible; padding-top: 5px">
+            <br>Select some text and then click <button>♾️</button> to get started! <br><br></p></div>
+            <table>
+            {% for x in tables %}
+                {{titles[loop.index]}}
+                {{ x|safe }}
+            {% endfor %}
+            </table>
+        </form>
+        <br>
+        <form class="grid" action="/resultuser" method="POST">
+        <label for="tst">Enter the Username:</label>
+            <input type="text" id="tst" name="tst" placeholder="Username" size="="50>
+            <br>
+            <br>Enter the username and then click <button>♾️</button> to get started! <br><br>
+            <ul>
+            <table>
+            {% for x in z %}
+                {{titles[loop.index]}}
+                {{ x|safe }}
+            {% endfor %}
+            </table>
+            </ul>
+           <!-- <p>{{error_msg}}</p>-->
+
+
+        </form>
+
+        </div>
+
+
+
+    </html>
+
+        <!-- <button id="clickIt">Click</button> -->
+    </body>
+    <script src="popup.js"></script>
+</html>

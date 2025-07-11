@@ -1,0 +1,79 @@
+/* positioning the  navigation container*/
+.navbarContainer{
+    position: fixed;
+    top: 0px;
+    background-color:rgba(0, 0, 0, 0.7);
+    height:60px;
+    width: 100%;
+    z-index: 1;
+    padding: 10px 0px 10px 0px;
+}
+
+list item positioning
+.navbar li{
+	float: right;
+    padding: 10px 15px 10px 20px;
+    text-align: center;
+}
+
+anchor displaying
+.navbar li a  {
+    text-decoration:none;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    transition: 0.2s all ease-in;
+    font-size: 16;
+    font-family:sans-serif;
+    font-weight: bold;
+	border-radius: 10px;
+}
+.navbar li a span{
+    color: rgb(117, 141, 250);
+    font-weight: italic;
+    transition: 0.2s all ease-in;
+}
+positioning the unordered list nav
+.navbar{
+	transition: 0.2s all ease-in;
+    list-style: none;
+    margin: 0px;
+}
+
+hover effect for the list names
+.navbar li a:hover{
+    color: black;
+    background: white;
+}
+hover effect for the list names span
+.navbar li:hover span{
+    color:rgb(0, 0, 0);
+}
+
+/*positioning the logo*/
+#webname{
+    height:40px ;
+    width: 60px;
+    border-color: transparent;
+    float: left;
+    color: white;
+    margin: 0px 80px 0px 15px;
+    padding: 0px 0px 0px 0px;
+}
+
+
+
+/* setting width*/
+::-webkit-scrollbar {
+    width: 13px;
+  }
+
+/*styling scrollbar track*/
+::-webkit-scrollbar-track {
+        background-color: black; 
+      }
+
+/*styling the scrolbar thumb*/
+::-webkit-scrollbar-thumb {
+          background-color:rgba(28, 137, 209,0.5) ; 
+          border-radius: 3px;
+        }
